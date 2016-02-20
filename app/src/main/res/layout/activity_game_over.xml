@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="harshit.hangman.Game">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/game_over"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@drawable/gradient_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutAddLetter">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Score"
+            android:id="@+id/button2"
+            android:onClick="SaveScore"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/text"
+            />
+
+        <EditText
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:hint="INSERT YOUR NAME"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColorHint="@color/text"
+            android:textColor="@color/text"
+            android:layout_weight="0.64" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutAddLetter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutLetters"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/textViewPoints"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Points &amp; Word was"
+            android:id="@+id/textView4"
+            android:layout_gravity="bottom"
+            android:textSize="20dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/word"
+            android:layout_marginTop="117dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toRightOf="@+id/textView8"
+            android:layout_alignRight="@+id/textView8"
+            android:layout_alignEnd="@+id/textView8"
+            android:textSize="20dp"
+            android:layout_weight="3.75"
+            android:layout_marginLeft="2dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
