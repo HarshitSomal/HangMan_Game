@@ -14,11 +14,13 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/editTextWord"
-       android:layout_centerInParent="true"
         android:maxLength="10"
         android:hint="Indroduce Word"
         android:textColorHint="@color/text"
-        android:textColor="@color/text" />
+        android:textColor="@color/text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
 
     <Button
         android:layout_width="150dp"
@@ -26,8 +28,9 @@
         android:background="@drawable/custom_button"
         android:text="Play"
         android:onClick="startMultiGame"
-        android:layout_marginTop="20dp"
+        android:textColor="@color/text"
+        android:id="@+id/button3"
         android:layout_below="@+id/editTextWord"
-        android:layout_centerInParent="true"
-        android:textColor="@color/text" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 </RelativeLayout>

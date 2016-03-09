@@ -80,5 +80,33 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="40dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#18dad7"
+        android:padding="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/playAgainLayout"
+        android:visibility="invisible">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/winnerMessage"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:textColor="#ffff"
+            android:id="@+id/playAgainButton"
+            android:background="@drawable/custombutton"
+            android:layout_gravity="center_horizontal"
+            android:onClick="playAgain" />
+    </LinearLayout>
 </RelativeLayout>

@@ -99,11 +99,23 @@ public class GameMulti extends AppCompatActivity implements AdapterView.OnItemSe
         }
         if(mGuessedLetter==mWord.length()){
             mPoints++;
-            finish();
+            TextView winnerMessage = (TextView) findViewById(R.id.winnerMessage);
+
+            winnerMessage.setText("You won!");
+
+            LinearLayout layout = (LinearLayout)findViewById(R.id.playAgainLayout);
+
+            layout.setVisibility(View.VISIBLE);
+
         }
     }
+    public void playAgain(View view) {
 
+        LinearLayout layout = (LinearLayout) findViewById(R.id.playAgainLayout);
 
+        layout.setVisibility(View.INVISIBLE);
+        finish();
+    }
       public void letterFailed(String letterFailed) {
           counter++;
           ImageView imageView = (ImageView) findViewById(R.id.imageView);
