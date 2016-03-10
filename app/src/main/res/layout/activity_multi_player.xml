@@ -9,18 +9,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="harshit.hangman.MultiPlayer">
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MULTI PLAYER"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark" />
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/editTextWord"
         android:maxLength="10"
-        android:hint="Indroduce Word"
+        android:hint="ENTER  WORD"
         android:textColorHint="@color/text"
         android:textColor="@color/text"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_editfield" />
 
     <Button
         android:layout_width="150dp"

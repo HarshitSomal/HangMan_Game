@@ -31,7 +31,7 @@ int mpoints;
         String name=editText.getText().toString();
         SharedPreferences.Editor editor=preferences.edit();
         String previousScores=preferences.getString("SCORES"," ");
-        editor.putString("SCORES",name+" "+ mpoints +"POINTS \n"+previousScores);
+        editor.putString("SCORES",name+" "+ mpoints +previousScores);
         editor.commit();
         finish();
     }

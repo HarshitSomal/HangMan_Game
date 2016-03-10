@@ -68,7 +68,8 @@
             android:id="@+id/textViewPoints"
             android:layout_gravity="bottom"
             android:layout_marginRight="5dp"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -78,7 +79,8 @@
             android:id="@+id/textView4"
             android:layout_gravity="bottom"
             android:textSize="20dp"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -92,7 +94,8 @@
             android:layout_alignEnd="@+id/textView8"
             android:textSize="20dp"
             android:layout_weight="3.75"
-            android:layout_marginLeft="2dp" />
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/colorPrimaryDark" />
 
 
     </LinearLayout>

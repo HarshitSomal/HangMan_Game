@@ -12,7 +12,7 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:src="@drawable/hangdroid_0"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:layout_above="@+id/layoutLetters" />
 
     <LinearLayout
@@ -110,7 +110,6 @@
             android:textSize="40dp"
              />
     </LinearLayout>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -121,15 +120,25 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="40dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guess Animal Name:"
+        android:text="Guess Animal Name of Four Word:"
         android:id="@+id/textView9"
         android:layout_alignBottom="@+id/layoutLetters"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textStyle="bold"
-        android:layout_alignTop="@+id/layoutLetters" />
+        android:layout_alignTop="@+id/layoutLetters"
+        android:textColor="@color/colorPrimaryDark" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SINGLE PLAYER"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp" />
 </RelativeLayout>

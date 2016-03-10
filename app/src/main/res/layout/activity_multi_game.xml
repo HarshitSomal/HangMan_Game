@@ -12,7 +12,7 @@
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:src="@drawable/hangdroid_0"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="80dp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -84,8 +84,8 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#18dad7"
-        android:padding="30dp"
+        android:background="@drawable/corner"
+        android:padding="50dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/playAgainLayout"
@@ -102,6 +102,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="Play Again"
             android:textColor="#ffff"
             android:id="@+id/playAgainButton"
@@ -109,4 +110,14 @@
             android:layout_gravity="center_horizontal"
             android:onClick="playAgain" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MULTI PLAYER"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark" />
 </RelativeLayout>

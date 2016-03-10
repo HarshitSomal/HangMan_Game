@@ -101,7 +101,7 @@ public class GameMulti extends AppCompatActivity implements AdapterView.OnItemSe
             mPoints++;
             TextView winnerMessage = (TextView) findViewById(R.id.winnerMessage);
 
-            winnerMessage.setText("You won!");
+            winnerMessage.setText("You win!");
 
             LinearLayout layout = (LinearLayout)findViewById(R.id.playAgainLayout);
 
@@ -139,7 +139,7 @@ public class GameMulti extends AppCompatActivity implements AdapterView.OnItemSe
                  //Game over
               Intent gameover=new Intent(this,GameOver.class);
               gameover.putExtra("POINTS",mPoints);
-              gameover.putExtra("WNAME",mWord);
+              gameover.putExtra("WNAME",mWord.toUpperCase());
               startActivity(gameover);
               finish();
                   }  }

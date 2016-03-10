@@ -144,7 +144,7 @@ public class Game extends AppCompatActivity implements AdapterView.OnItemSelecte
                  //Game over
               Intent gameover=new Intent(this,GameOver.class);
               gameover.putExtra("POINTS",mPoints);
-              gameover.putExtra("WNAME",mWord);
+              gameover.putExtra("WNAME",mWord.toUpperCase());
               startActivity(gameover);
               finish();
 
