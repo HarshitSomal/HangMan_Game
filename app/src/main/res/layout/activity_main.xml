@@ -71,5 +71,25 @@
         android:layout_marginBottom="10dp"
         android:onClick="Score"
         android:textColor="@color/text" />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
 
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="450dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=  "Developed By Harshit Somal @version1.0"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" />
+</LinearLayout>
 </RelativeLayout>
